@@ -1,0 +1,205 @@
+.single-posts-screen{
+    position: relative;
+}
+
+.single-posts-screen .hidden {
+    display: none !important;
+}
+
+.single-posts-screen > .single-posts-preloader{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .9);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-posts-menu {
+    float: left;
+}
+.single-posts-ul {
+    font-size: 20px;
+    padding: 0;
+    margin: 0 0 8px 0;
+}
+.single-posts-ul li {
+    list-style: none;
+    border-left: 20px solid #d2def0;
+    line-height: 120%;
+    margin-bottom: 10px;
+    padding-left: 8px;
+}
+.single-posts-block-wrapper {
+}
+.clear, .end-single-posts-content {
+    clear: both;
+}
+.align-left {
+    float: left;
+}
+.align-right {
+    float: right;
+}
+.single-posts-content {
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.single-posts-content .inline-post > div {
+    position: relative;
+    float: left;
+}
+.single-posts-content .inline-post > .single-posts-post-thumbnail.align-left {
+    margin-right: 10px;
+}
+.single-posts-content .inline-post > .single-posts-post-thumbnail.align-right {
+    margin-left: 10px;
+}
+.single-posts-content .inline-post > .single-posts-text-content {
+    width: 75%;
+}
+@media (max-width: 985px) {
+    .single-posts-content .inline-post > .single-posts-text-content {
+        width: 70%;
+    }
+}
+@media (max-width: 835px) {
+    .single-posts-content .inline-post > .single-posts-text-content {
+        width: 65%;
+    }
+}
+@media (max-width: 500px) {
+    .single-posts-content .inline-post > .single-posts-text-content {
+        width: 100%;
+    }
+    .single-posts-content .inline-post > .single-posts-post-thumbnail {
+        width: 100%;
+        text-align: center;
+    }
+}
+.single-posts-content img {
+    display: inline;
+}
+.single-posts-content .more-column {
+    float: none;
+}
+.single-posts-title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 32px;
+    border-bottom: 2px solid #ccc;
+    margin-left: 30px;
+    margin-left: 0;
+    font-weight: 400;
+    display: block;
+    padding: 2px 5px 12px 5px;
+}
+.single-posts-post-titles-only {
+    font-family: impact;
+    font-size: 22px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+    display: block;
+}
+.single-posts-posttitle {
+    font-family: impact;
+    font-size: 22px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.single-posts-posttitle a {
+    color: #004080;
+    color: #800000;
+    line-height: 120%;
+}
+.single-posts-content .price {
+    margin: 0 0 4px;
+    font-weight: bold;
+}
+.single-posts-column {
+    display: inline-block;
+    float: left;
+    width: 360px;
+    margin: 0 0 0 30px;
+}
+.single-posts-source {
+    display: block;
+    border-top: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: 5px;
+    font-family: serif;
+    color: #8d8d8d;
+}
+.single-posts-excerpt {
+    font-family: Arial Narrow, Helvetica, Arial;
+    line-height: 120%;
+    text-align: justify;
+}
+.single-posts-paginate {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px;
+    border-top: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+    margin: 0 0 0 30px;
+}
+.single-posts-paginate a {
+    text-decoration: none;
+    color: #000080;
+}
+.single-posts-paginate a:hover {
+    background-color: #800000;
+}
+.single-posts-paginate span.current {
+    padding: 2px 5px 2px 5px;
+    background-color: #d0dff2;
+    color: #000080;
+    margin: 2px;
+}
+.single-posts-paginate a.next, .single-posts-paginate a.prev {
+}
+.single-posts-paginate .page-numbers {
+    padding: 2px 5px 2px 5px;
+    color: #fffbf0;
+    background-color: #7d99c4;
+    margin: 2px;
+}
+a.single-posts-read-more-link {
+    color: #0000ff;
+}
+a.single-posts-read-more-link:hover {
+    color: #ff0000;
+}
+.img-hover:hover {
+    filter: grayscale(1);
+}
+
+_:-ms-lang(x), .img-hover:hover {
+    opacity: 0.7
+}
+
+span.icon{
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    margin: 2px 4px 0 4px;
+    vertical-align: middle;
+}
+
+.icon.ic-category{
+    background: url('../pictures/folder-open-solid.svg') no-repeat;
+    background-size: contain;
+}
+
+.icon.ic-tag{
+    background: url('../pictures/tag-solid.svg') no-repeat;
+    background-size: contain;
+}
+
+.icon.ic-custom-taxonomy{
+    background: url('../pictures/folder-open-green.svg') no-repeat;
+    background-size: contain;
+}
